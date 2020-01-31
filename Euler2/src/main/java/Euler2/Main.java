@@ -7,6 +7,7 @@ two terms. By starting with 1 and 2, the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not exceed 
 four million, find the sum of the even-valued terms.
  */
+
 package Euler2;
 
 /**
@@ -19,6 +20,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Timer newTimer = new Timer();
         // Variable sum will be used to store the sum of the numbers
         int sum = 2;
         //Variables to hold two consecutive numbers
@@ -43,6 +45,7 @@ public class Main {
            
         }
         System.out.println(sum);
+        newTimer.end();
     }
     
 }
