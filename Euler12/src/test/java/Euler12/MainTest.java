@@ -23,12 +23,12 @@ public class MainTest {
     
     
     /**
-     * Test of main method, of class Main.
+     * Test of main method, of class Euler12.
      */
     @Test
     public void testMain() {
       
-        assertTrue(Main.isSquare(25)==true);
+        assertTrue(Euler12.isSquare(25)==true);
         
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");

@@ -13,19 +13,7 @@ package Euler5;
  */
 public class Main {
     
-    private static boolean isPrime(int n)
-    {
-        boolean prime = true;
-        for(int i = 3;i<n;i=i+2)
-        {
-            if(n%i==0)
-            {    
-                prime = false;
-                return prime;
-            }    
-        }
-        return prime;
-    }
+    
     
     private static int[] primeList(int n)
     {

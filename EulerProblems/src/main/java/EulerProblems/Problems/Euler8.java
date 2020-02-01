@@ -26,20 +26,20 @@ are 9 × 9 × 8 × 9 = 5832.
 Find the thirteen adjacent digits in the 1000-digit number that have 
 the greatest product. What is the value of this product?
  */
-package Euler8;
+package EulerProblems.Problems;
 
 /**
  *
  * @author Richard
  */
-public class Main {
+public class Euler8 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        bigInteger
+        
     }
     
 }

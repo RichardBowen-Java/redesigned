@@ -18,44 +18,33 @@ We can see that 28 is the first triangle number to have over five divisors.
 
 What is the value of the first triangle number to have over five hundred divisors?
  */
-package Euler12;
+package EulerProblems.Problems;
+
+//Java class imports
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+//personal class imports
+import EulerProblems.sharedMethods.Division;
 /**
  *
- * @author Richard
+ * @author Richard Bowen
  */
-public class Main {
+public class Euler12 extends EulerProblems.Problem{
 
-    public static int numberOfDivisors(long currentSum)
-    {
-        ArrayList <Long> rootOfSum = new ArrayList<Long>(0);
-        ArrayList <Long> remainder = new ArrayList<Long>(0);
-        long squareRoot = (long) Math.sqrt((double)currentSum);
-        
-        for (long i = 1;i<squareRoot;i++)
-        {
-            if(currentSum%i==0)
-            {
-                rootOfSum.add(i);
-            }
-        }
-        for (int i = 0;i<rootOfSum.size();i++)
-        {
-            remainder.add(currentSum/rootOfSum.get(i));
-        }
-        rootOfSum.addAll(remainder);
-        List<Long> divisorsWithoutDuplicates = rootOfSum.stream().distinct().collect(Collectors.toList());
-        return divisorsWithoutDuplicates.size();
-    }    
-    
-    
     /**
-     * @param args the command line arguments
+     * 
      */
-    public static void main(String[] args) 
+    public Euler12()
     {
+        this.name = "Euler 1";
+    }
+    
+    @Override 
+    public void Solution() 
+    {
+    Division div = new Division();    
     long startTime = System.currentTimeMillis();        
     // TODO code application logic here
         int divisors = 1;

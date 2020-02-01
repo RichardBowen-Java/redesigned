@@ -4,13 +4,13 @@ we can see that the 6th prime is 13.
 
 What is the 10 001st prime number?
  */
-package euler7;
+package EulerProblems.Problems;
 
 /**
  *
  * @author Richard
  */
-public class Main {
+public class Euler7 {
 
     /**
      * @param args the command line arguments

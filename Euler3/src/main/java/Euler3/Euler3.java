@@ -108,7 +108,7 @@ package Euler3;
  *
  * @author Richard Bowen
  */
-public class Main {
+public class Euler3 {
     //This method checks whether an input is prime
     //This method takes a long parameter
     //This method returns a boolean
@@ -136,6 +136,7 @@ public class Main {
     public static void main(String[] args) {
         //TODO code application logic here
         //Instantiate variables to hold the number, max prime and an iterator i 
+        Prime newPrime = new Prime();
         long n = 600851475143L;
         long max = 0;
         long i = 3;

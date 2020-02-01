@@ -13,7 +13,7 @@ package Euler9;
  *
  * @author Richard
  */
-public class Main {
+public class Euler9 {
 
     /**
      * @param args the command line arguments

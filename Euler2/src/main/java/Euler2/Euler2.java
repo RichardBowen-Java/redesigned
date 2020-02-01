@@ -14,7 +14,7 @@ package Euler2;
  *
  * @author Richard Bowen
  */
-public class Main {
+public class Euler2 {
 
     /**
      * @param args the command line arguments
