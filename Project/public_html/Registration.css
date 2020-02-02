@@ -7,7 +7,10 @@ and open the template in the editor.
     Created on : 01-Feb-2020, 19:23:49
     Author     : Richard
 */
-
+#heading
+{
+    margin-left:20%;
+}
 footer{
     position:fixed;
     bottom:0px;
@@ -16,4 +19,8 @@ footer{
     text-align:center;
     color:white;
     font-weight: bold;
+}
+.logout{
+    position:fixed;
+    right:0px;
 }
