@@ -24,3 +24,7 @@ footer{
     position:fixed;
     right:0px;
 }
+.pagination{
+    position:fixed;
+    bottom:100px;
+}
