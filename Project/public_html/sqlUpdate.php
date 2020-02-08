@@ -12,17 +12,13 @@
             $lastName = filter_input(INPUT_POST,'lastName');
             $userName = filter_input(INPUT_POST,'userName');
             $password = filter_input(INPUT_POST,'password');
+            $email = filter_input(INPUT_POST,'email');
             $time = date("h:i:sa");
             $permissions = "read";
             $repeat = filter_input(INPUT_POST,'repeat');
             
-            echo $firstName; 
-            echo $lastName; 
-            echo $userName; 
-            echo $password; 
-            echo $time; 
-            echo $permissions; 
-            echo $repeat; 
+            echo $userName;
+           
             
             if($password!=$repeat)
             {
@@ -32,9 +28,10 @@
             {
                 if(isset($_POST['Register']))
                 {
-                $query = "INSERT INTO Login details VALUES"."('$firstName','$lastName','$userName','$password','$time','$permissions'";
-                $result = $conn ->query($query);
-                echo $result;
+                $query = "INSERT INTO `Login details` VALUES('$firstName','$lastName','$email','$userName','$password','$time','$permissions')";
+                $result = mysqli_query($conn, $query);
+                echo '<br>';
+                echo $query;
                 }
             }    
 ?>
