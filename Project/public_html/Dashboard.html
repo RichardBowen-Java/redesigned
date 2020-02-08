@@ -8,86 +8,188 @@
         <link rel = "stylesheet" type="text/css" href="bootstrap.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      .bd-placeholder-img {
+        
+        <style>
+        .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-      }
+        }
 
-      @media (min-width: 768px) {
+        @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
+          }
         }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="Registration.css" rel="stylesheet">
+        </style>
+    
+        <!-- Custom styles for this template -->
+        <link href="Registration.css" rel="stylesheet">
+        <link href="Main.css" rel="stylesheet">
     </head>
     
     <body>
-        
+        <!-- Main navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="about.html">Project control centre</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-        <div class="collapse navbar-collapse lg" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-5">
-            <li class="nav-item active">
-            <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
-            </li>
+            <a class="navbar-brand" href="about.html">Project control centre</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                        
+            <div class="collapse navbar-collapse lg" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-5">
+                    
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
+                    </li>
       
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
       
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-            </a>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Drop down
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+      
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul> 
             
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-            </li>
-      
-            <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-            </ul> 
-            
-            <form class="form-inline w-75 p-3">
+                <form class="form-inline w-75 p-3">
                 <button class="btn btn-outline-success mr-2" type="submit">Search</button>
                 <input class="form-control searchtext mr-5 w-75 p-3" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <p class ="nav-link">Current user:xxx</p>            
-            <button class="btn btn-outline-success logout">Logout</button>
-  </div>
-</nav>
+                </form>
+                <p class ="nav-link">Current user:xxx</p>            
+                <button class="btn btn-outline-success logout">Logout</button>
+            </div>
+        </nav>
         
-  <div class="container">
-    <div class="py-5" id = "heading">
-        <h2>Project status</h2>
-        <p></P>
-    </div>
-  </div>
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
+        <!-- small navbar -->
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline">
+                <a class="nav-link active" href="#">Dashboard</a>
+                <a class="nav-link" href="#">
+                Friends
+                <span class="badge badge-pill bg-light align-text-bottom">27</span>
+                </a>
+                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link" href="#">Suggestions</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+            </nav>
+        </div>
+        
+        <div class="container maincontainer">
+            <div class="py-5" id = "heading">
+                <h2>Project status</h2>
+            </div>
+        </div>
+        
+        <main role="main" class="container">
+            <div class="d-flex align-items-center text-white-50 bg-purple rounded shadow-sm">
+                <div class="lh-100">
+                    <h6 class="mb-0 text-white lh-100">Bootstrap</h6>
+                    <small>Since 2011</small>
+                </div>
+            </div>
+           
+            <div class="bg-white rounded shadow-sm">
+                <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+                <div class="media text-muted ">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@username</strong>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+           
+                <div class="media text-muted pt-3">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@username</strong>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+    
+                <div class="media text-muted pt-3">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"/><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@username</strong>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+    
+                <small class="d-block text-right mt-3">
+                <a href="#">All updates</a>
+                </small>
+            </div>
+
+            <div class="my-3 p-3 bg-white rounded shadow-sm">
+                <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
+            
+                    <div class="media text-muted pt-3">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                            <strong class="text-gray-dark">Full Name</strong>
+                            <a href="#">Follow</a>
+                            </div>
+                            <span class="d-block">@username</span>
+                        </div>
+                    </div>
+            
+                    <div class="media text-muted pt-3">
+                        <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                                <div class="d-flex justify-content-between align-items-center w-100">
+                                <strong class="text-gray-dark">Full Name</strong>
+                                <a href="#">Follow</a>
+                                </div>
+                                <span class="d-block">@username</span>
+                            </div>
+                    </div>
+                
+                    <div class="media text-muted pt-3">
+                      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                          <div class="d-flex justify-content-between align-items-center w-100">
+                            <strong class="text-gray-dark">Full Name</strong>
+                            <a href="#">Follow</a>
+                          </div>
+                          <span class="d-block">@username</span>
+                        </div>
+                    </div>
+                    <small class="d-block text-right mt-3">
+                    <a href="#">All suggestions</a>
+                    </small>
+            </div>
+        </main>
+    
+        
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
  
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -95,7 +197,7 @@
         <script src="form-validation.js"></script></body>
         
             <footer>
-            <p>Coded by Richard David Bowen</p>    
+            <p>Coded by Richard David Bowen using the Bootstrap framework</p>    
             </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
